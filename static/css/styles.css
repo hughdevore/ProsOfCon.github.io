@@ -1,3 +1,7 @@
+.navbar {
+	margin-bottom: 0px !important;
+}
+
 a.navbar-brand {
 	margin: 0 !important;
 	padding: 0 !important;
@@ -15,4 +19,15 @@ a.social-icon {
 	text-align: center;
     font-size: 22px;
     margin-top: 15px;
+}
+
+
+#main {
+	height: 2000px;
+	width: 100%;
+	background: url(../img/toad.gif) repeat center center fixed; 
+/* 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;*/
 }
