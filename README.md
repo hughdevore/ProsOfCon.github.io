@@ -1,4 +1,8 @@
 # website
+
+Temporary URL (Will change when I get hosting info):
+http://prosofcon.github.io/
+
 Welcome to the home of the Official Website of The Pros of Con. This is where the code for the website is stored, as well as useful band info. Currently it is publicly visibe to maintain no cost. Though whenever we're ready we can change it to a private repository at $6/month.
 
 ##Social
