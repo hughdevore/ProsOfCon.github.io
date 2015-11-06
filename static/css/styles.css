@@ -1,17 +1,31 @@
+#nav-container {
+	padding-right: 0;
+}
+.nav-collapse {
+	padding-right: 0 !important;
+}
 .navbar {
 	margin-bottom: 0px !important;
+	border-radius: 0 !important;
 }
-
 a.navbar-brand {
 	margin: 0 !important;
 	padding: 0 !important;
+}
+.navbar-nav {
+	width: 40%;
+    float: right !important;
 }
 
 #brand {
 	font-size: 25px;
     line-height: 2;
 }
-
+.social-icon-nav {
+	width: 30%;
+    margin: 0 auto;
+    display: inline-block;
+}
 a.social-icon {
 	display: inline-block !important;
 	padding: 0 !important;
@@ -19,15 +33,26 @@ a.social-icon {
 	text-align: center;
     font-size: 22px;
     margin-top: 15px;
+    width: 30%;
+}
+.menu-rt {
+	width: 15%;
+    text-align: center;
+}
+.menu-rt:hover {
+	background-color: white;
+	color: black !important;
 }
 
 
-#main {
-	height: 2000px;
-	width: 100%;
-	background: url(../img/toad.gif) repeat center center fixed; 
-/* 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;*/
+.body-row {
+	text-align: center;
+	margin-bottom: 35px; ;
+}
+.soundcloud-wgt {
+	height: 200px;
+	padding: 75px;
+}
+.widget{
+	margin-bottom: 50px;
 }
