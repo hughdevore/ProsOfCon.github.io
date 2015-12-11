@@ -1,26 +1,24 @@
+/******* NAVIGATION *******/
+
 #nav-container {
 	padding-right: 0;
-}
-.nav-collapse {
-	padding-right: 0 !important;
-}
-.navbar {
+	padding-left: 0;
 	margin-bottom: 0px !important;
 	border-radius: 0 !important;
 }
+
+
+/* LOGO */
 a.navbar-brand {
 	margin: 0 !important;
 	padding: 0 !important;
 }
-.navbar-nav {
-	width: 40%;
-    float: right !important;
-}
-
 #brand {
 	font-size: 25px;
     line-height: 2;
 }
+
+/* SOCIAL */
 .social-icon-nav {
 	width: 30%;
     margin: 0 auto;
@@ -35,8 +33,17 @@ a.social-icon {
     margin-top: 15px;
     width: 30%;
 }
+
+/* SITE NAV */
+#site-nav {
+	width: 33.33333333%;
+	float: right;
+}
+.navbar-nav {
+	width: 100%;
+}
 .menu-rt {
-	width: 15%;
+	width: 33.33333333%;
     text-align: center;
 }
 .menu-rt:hover {
@@ -45,6 +52,7 @@ a.social-icon {
 }
 
 
+/* BODY */
 .body-row {
 	text-align: center;
 	margin-bottom: 35px; ;
