@@ -29,7 +29,12 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
+	<script type="text/javascript" src="static/js/soundcloud.js"></script>
+	<script type="text/javascript">
+	   soundcloud.addEventListener('onPlayerReady', function(player, data) {
+	     player.api_play();
+	   });
+	</script>
 </head>
 
 <body id="page-top" class="index">
@@ -92,7 +97,16 @@
 
 			
 			<h1 class="row-header col-lg-12">THE MUSIC</h1>
-			<div class="soundcloud-wgt col-lg-12">Soundcloud Widget Soundcloud Widget Soundcloud Widget Soundcloud Widget Soundcloud Widget</div>
+			<div class="soundcloud-wgt col-lg-12">
+				<object id="myPlayer" height="81" width="100%">
+				 	<param name="movie"
+				    value="http://player.soundcloud.com/player.swf?the-pros-of-con&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F293"></param>
+					<param name="allowscriptaccess" value="always"></param>
+					<embed name="myPlayer" src="http://player.soundcloud.com/player.swf?the-pros-of-con&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F293"
+				    allowscriptaccess="always" height="81"  type="application/x-shockwave-flash" width="100%">
+					</embed>
+				</object>
+			</div>
 
 			<!-- PASQUALE INFO -->
 			<div class="member col-lg-12 col-xs-12">
