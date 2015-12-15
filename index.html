@@ -15,11 +15,11 @@
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-	
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="static/css/styles.css">
 
@@ -29,18 +29,18 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<script type="text/javascript" src="static/js/soundcloud.js"></script>
+<!-- 	<script type="static/js/soundcloud.js"></script>
 	<script type="text/javascript">
-	   soundcloud.addEventListener('onPlayerReady', function(player, data) {
-	     player.api_play();
-	   });
-	</script>
+	     soundcloud.addEventListener('onPlayerReady', function(player, data) {
+	       player.api_play();
+	     });
+	</script> -->
 </head>
 
 <body id="page-top" class="index">
 		
 	
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar">
 
 		<!-- NAV BAR CONTAINER -->
 		<div id="nav-container" class="container-fluid">
@@ -64,13 +64,13 @@
 			<div class="social-icon-nav col-lg-4 col-md-4 col-xs-4">
 
 				<!-- SOUNDCLOUD -->
-				<a class="social-icon" target="_blank" href="https://soundcloud.com/the-pros-of-con"><i class="glyphicon glyphicon-cloud fa fa-soundcloud"></i></a>
+				<a class="social-icon" target="_blank" href="https://soundcloud.com/the-pros-of-con"><i class="fa fa-soundcloud"></i></a>
 
 				<!-- FACEBOOK -->
-				<a class="social-icon" target="_blank" href="https://www.facebook.com/theprosofcon/"><i class="glyphicon glyphicon-cloud fa fa-facebook"></i></a>
+				<a class="social-icon" target="_blank" href="https://www.facebook.com/theprosofcon/"><i class="fa fa-facebook"></i></a>
 
 				<!-- TWITTER -->
-				<a class="social-icon" target="_blank" href="https://twitter.com/theprosofcon/TheProsOfCon?lang=en"><i class="glyphicon glyphicon-cloud fa fa-twitter"></i></a>
+				<a class="social-icon" target="_blank" href="https://twitter.com/theprosofcon/TheProsOfCon?lang=en"><i class="fa fa-twitter"></i></a>
 
 			</div>
 
@@ -80,89 +80,127 @@
 				
 				<!-- SITE NAVIGATION LINKS -->
 				<ul class="nav navbar-nav">
-					<li class="menu-rt"><a href="#">MUSIC</a></li>
-					<li class="menu-rt"><a href="#">SHOWS</a></li>
-					<li class="menu-rt"><a href="#">WEB</a></li>
+					<li class="menu-rt"><a href="#music">MUSIC</a></li>
+					<li class="menu-rt"><a href="#shows">SHOWS</a></li>
+					<li class="menu-rt"><a href="#members">BAND</a></li>
+					<li class="menu-rt"><a href="#interwebs">WEB</a></li>
 				</ul>
 
 			</div>
 
 		</div>
 	</nav>
-		
 
-	<div class="container-fluid">
+	<div id="content-body-wrapper"
 
-		<div class="row body-row">
+		<!-- SOUNDCLOUD WIDGET -->
+		<div id="music" class="container-fluid soundcloud-container">
 
-			
-			<h1 class="row-header col-lg-12">THE MUSIC</h1>
-			<div class="soundcloud-wgt col-lg-12">
-				<object id="myPlayer" height="81" width="100%">
-				 	<param name="movie"
-				    value="http://player.soundcloud.com/player.swf?the-pros-of-con&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F293"></param>
-					<param name="allowscriptaccess" value="always"></param>
-					<embed name="myPlayer" src="http://player.soundcloud.com/player.swf?the-pros-of-con&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F293"
-				    allowscriptaccess="always" height="81"  type="application/x-shockwave-flash" width="100%">
-					</embed>
-				</object>
-			</div>
+			<div class="row body-row">
 
-			<!-- PASQUALE INFO -->
-			<div class="member col-lg-12 col-xs-12">
-				<div class="member-img-container pasquale-img-container col-xs-4">
-					<h3>Pasquale</h3>
-					<h4>Vocals/Guitar/Keys</h4>
+				<h1 class="row-header col-lg-12">THE MUSIC</h1>
+				<div class="soundcloud-wgt col-lg-12">
+					<!-- <object height="81" width="100%" id="yourPlayerId" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+					    <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmatas%2Fhobnotropic&enable_api=true&object_id=yourPlayerId"></param>
+					    <param name="allowscriptaccess" value="always"></param>
+					    <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmatas%2Fhobnotropic&enable_api=true&object_id=yourPlayerId" type="application/x-shockwave-flash" width="100%" name="yourPlayerId"></embed>
+					 </object> -->
 				</div>
-
-				<p class="col-xs-8">Flannel waistcoat forage gluten-free, celiac cray bitters single-origin coffee pickled knausgaard twee tousled 8-bit banh mi chambray. Hoodie brunch organic flannel umami. Asymmetrical church-key kickstarter chia synth skateboard mixtape, readymade gastropub lumbersexual forage pork belly knausgaard quinoa. Keytar blue bottle yr vice fixie photo booth. Selvage chambray migas tattooed pinterest, messenger bag master cleanse XOXO church-key readymade quinoa gluten-free lumbersexual venmo.</p>
-			</div>
-
-			<!-- ANDREW INFO -->
-			<div class="member col-xs-12">
-				<div class="member-img-container andrew-img-container col-xs-4">
-					<h3>Andrew</h3>
-					<h4>Vocals/Guitar</h4>
-				</div>
-				
-				<p class="col-xs-8">Flannel waistcoat forage gluten-free, celiac cray bitters single-origin coffee pickled knausgaard twee tousled 8-bit banh mi chambray. Hoodie brunch organic flannel umami. Asymmetrical church-key kickstarter chia synth skateboard mixtape, readymade gastropub lumbersexual forage pork belly knausgaard quinoa. Keytar blue bottle yr vice fixie photo booth. Selvage chambray migas tattooed pinterest, messenger bag master cleanse XOXO church-key readymade quinoa gluten-free lumbersexual venmo.</p>
-			</div>
-
-			<!-- SHANE INFO -->
-			<div class="member col-xs-12">
-				<div class="member-img-container shane-img-container col-xs-4">
-					<h3>Shane</h3>
-					<h4>Vocals/Bass</h4>
-				</div>
-
-				<p class="col-xs-8">Flannel waistcoat forage gluten-free, celiac cray bitters single-origin coffee pickled knausgaard twee tousled 8-bit banh mi chambray. Hoodie brunch organic flannel umami. Asymmetrical church-key kickstarter chia synth skateboard mixtape, readymade gastropub lumbersexual forage pork belly knausgaard quinoa. Keytar blue bottle yr vice fixie photo booth. Selvage chambray migas tattooed pinterest, messenger bag master cleanse XOXO church-key readymade quinoa gluten-free lumbersexual venmo.</p>  
-			</div>
-
-			<!-- BRANDON INFO -->
-			<div class=" col-xs-12">
-				<div class="member-img-container brandon-img-container col-xs-4">
-					<h3>Brandon</h3>
-					<h4>Vocals/Drums</h4>
-				</div>
-				
-				<p class="col-xs-8">Flannel waistcoat forage gluten-free, celiac cray bitters single-origin coffee pickled knausgaard twee tousled 8-bit banh mi chambray. Hoodie brunch organic flannel umami. Asymmetrical church-key kickstarter chia synth skateboard mixtape, readymade gastropub lumbersexual forage pork belly knausgaard quinoa. Keytar blue bottle yr vice fixie photo booth. Selvage chambray migas tattooed pinterest, messenger bag master cleanse XOXO church-key readymade quinoa gluten-free lumbersexual venmo.</p>
 			</div>
 
 		</div>
 
-		<div class="row body-row">
-			<h1 class="row-header col-xs-12">THE SHOWS</h1>
-			<div class="widget col-xs-12">Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar</div>
-		</div>
-	
-		<div class="row body-row">
-			<h1 class="row-header col-lg-12">ON THE WEB</h1>
-			<div class="widget col-lg-4 col-xs-12">Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget</div>
-			<div class="widget col-lg-4 col-xs-12">Facebook Widget Facebook Widget Facebook Widget Facebook Widget Facebook Widget Facebook Widget Facebook Widget Facebook Widget Facebook Widget</div>
-			<div class="widget col-lg-4 col-xs-12">Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget</div>
+
+
+		<!-- SHOWS -->
+		<div id="shows" class="container-fluid show-container">
+
+			<div class="row body-row">
+				<h1 class="row-header col-xs-12">THE SHOWS</h1>
+				<div class="widget col-xs-12">Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show CalendarShow Calendar Show Calendar Show Calendar Show Calendar Show Calendar Show Calendar</div>
+			</div>
+
 		</div>
 
 
+
+
+		<!-- BAND MEMBERS -->
+		<div id="members" class="container-fluid member-container">
+
+			<div class="row body-row">
+
+				<h1 class="row-header col-xs-12">THE PROS</h1>
+
+				<!-- PASQUALE INFO -->
+				<div class="member pasquale-row col-lg-12 col-xs-12">
+
+					<div class="member-img-container pasquale-img-container col-sm-4 col-xs-12">
+						<div class="info-container">
+							<h3>Pasquale Mattozzi</h3>
+							<h4>Vocals/Guitar/Keys</h4>
+						</div>
+					</div>
+
+					<p class="member-text col-sm-8 col-xs-12">Flannel waistcoat forage gluten-free, celiac cray bitters single-origin coffee pickled knausgaard twee tousled 8-bit banh mi chambray. Hoodie brunch organic flannel umami. Asymmetrical church-key kickstarter chia synth skateboard mixtape, readymade gastropub lumbersexual forage pork belly knausgaard quinoa. Keytar blue bottle yr vice fixie photo booth. Selvage chambray migas tattooed pinterest, messenger bag master cleanse XOXO church-key readymade quinoa gluten-free lumbersexual venmo.</p>
+				</div>
+
+				<!-- ANDREW INFO -->
+				<div class="member andrew-row col-xs-12">
+					
+					<p class="member-text col-sm-8 col-xs-12">Flannel waistcoat forage gluten-free, celiac cray bitters single-origin coffee pickled knausgaard twee tousled 8-bit banh mi chambray. Hoodie brunch organic flannel umami. Asymmetrical church-key kickstarter chia synth skateboard mixtape, readymade gastropub lumbersexual forage pork belly knausgaard quinoa. Keytar blue bottle yr vice fixie photo booth. Selvage chambray migas tattooed pinterest, messenger bag master cleanse XOXO church-key readymade quinoa gluten-free lumbersexual venmo.</p>
+
+					<div class="member-img-container andrew-img-container col-sm-4 col-xs-12">
+						<div class="info-container">
+							<h3>Andrew Moore</h3>
+							<h4>Vocals/Guitar</h4>
+						</div>
+					</div>
+				</div>
+
+				<!-- SHANE INFO -->
+				<div class="member shane-row col-xs-12">
+
+					<div class="member-img-container shane-img-container col-sm-4 col-xs-12">
+						<div class="info-container">
+							<h3>Shane Jones</h3>
+							<h4>Vocals/Bass</h4>
+						</div>
+					</div>
+
+					<p class="member-text col-sm-8 col-xs-12">Flannel waistcoat forage gluten-free, celiac cray bitters single-origin coffee pickled knausgaard twee tousled 8-bit banh mi chambray. Hoodie brunch organic flannel umami. Asymmetrical church-key kickstarter chia synth skateboard mixtape, readymade gastropub lumbersexual forage pork belly knausgaard quinoa. Keytar blue bottle yr vice fixie photo booth. Selvage chambray migas tattooed pinterest, messenger bag master cleanse XOXO church-key readymade quinoa gluten-free lumbersexual venmo.</p>  
+				</div>
+
+				<!-- BRANDON INFO -->
+				<div class="member brandon-row col-xs-12">
+					
+					<p class="member-text col-sm-8 col-xs-12">Flannel waistcoat forage gluten-free, celiac cray bitters single-origin coffee pickled knausgaard twee tousled 8-bit banh mi chambray. Hoodie brunch organic flannel umami. Asymmetrical church-key kickstarter chia synth skateboard mixtape, readymade gastropub lumbersexual forage pork belly knausgaard quinoa. Keytar blue bottle yr vice fixie photo booth. Selvage chambray migas tattooed pinterest, messenger bag master cleanse XOXO church-key readymade quinoa gluten-free lumbersexual venmo.</p>
+
+					<div class="member-img-container brandon-img-container col-sm-4 col-xs-12">
+						<div class="info-container">
+							<h3>Brandon Custer</h3>
+							<h4>Vocals/Drums</h4>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+		<!-- WEB -->
+		<div id="interwebs" class="container-fluid web-container">
+
+			<div class="row body-row">
+				<h1 class="row-header col-lg-12">ON THE WEB</h1>
+				<div class="widget col-lg-4 col-xs-12">Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget Instagram Widget</div>
+				<div class="widget col-lg-4 col-xs-12">Facebook Widget Facebook Widget Facebook Widget Facebook Widget Facebook Widget Facebook Widget Facebook Widget Facebook Widget Facebook Widget</div>
+				<div class="widget col-lg-4 col-xs-12">Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget Twitter Widget</div>
+			</div>
+
+		</div>
 
 	</div>
 

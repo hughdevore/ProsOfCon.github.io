@@ -1,5 +1,30 @@
-/******* NAVIGATION *******/
+/******* BODY *******/
+#content-body-wrapper{
 
+}
+.body-row {
+	text-align: center;
+}
+.row-header {
+	margin: 35px 0;
+}
+h1 {
+	font-size: 30px;
+    text-align: left;
+    padding-left: 25px !important;
+    background-color: black;
+    color: white;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    line-height: 3;
+}
+
+
+
+/******* NAVIGATION *******/
+.navbar {
+	margin: 40px 0 !important;
+}
 #nav-container {
 	padding-right: 0;
 	padding-left: 0;
@@ -14,15 +39,21 @@ a.navbar-brand {
 	padding: 0 !important;
 }
 #brand {
-	font-size: 25px;
-    line-height: 2;
+	font-size: 40px;
+    line-height: 1.35;
+    padding-left: 15px;
+    color: black;
+    font-family: 'Muli', sans-serif;
 }
+
 
 /* SOCIAL */
 .social-icon-nav {
-	width: 30%;
+	width: 33.333333%;
     margin: 0 auto;
     display: inline-block;
+    top: 45px;
+    text-align: center;
 }
 a.social-icon {
 	display: inline-block !important;
@@ -32,6 +63,15 @@ a.social-icon {
     font-size: 22px;
     margin-top: 15px;
     width: 30%;
+}
+.fa-soundcloud {
+	color: RGBA(255, 87, 0, 1);
+}
+.fa-facebook {
+	color: RGBA(58, 89, 162, 1);
+}
+.fa-twitter {
+	color: RGBA(38, 168, 229, 1);
 }
 
 /* SITE NAV */
@@ -43,19 +83,24 @@ a.social-icon {
 	width: 100%;
 }
 .menu-rt {
-	width: 33.33333333%;
+	font-size: 20px;
+	width: 25%;
     text-align: center;
+    font-family: 'Muli', sans-serif;
 }
-.menu-rt:hover {
-	background-color: white;
+.navbar-nav>li>a {
+	color: black;
+	line-height: 1.5;
+}
+nav>li>a:hover {
 	color: black !important;
 }
 
 
-/* BODY */
-.body-row {
-	text-align: center;
-	margin-bottom: 35px; ;
+
+/******* SOUNDCLOUD WIDGET *******/
+.soundcloud-container {
+
 }
 .soundcloud-wgt {
 	height: 200px;
@@ -63,4 +108,98 @@ a.social-icon {
 }
 .widget{
 	margin-bottom: 50px;
+}
+
+
+
+/******* SHOWS *******/
+.show-container {
+
+}
+
+
+
+/******* MEMBERS *******/
+.member-container{
+	margin-bottom: 0;
+}
+.member {
+	padding: 40px 30px;
+}
+.member-img-container {
+	background-size: cover;
+	height: 350px;
+}
+.member-text {
+	font-size: 22px;
+    text-align: left;
+    padding: 0 25px
+}
+@media all (min-width: 971px) {
+	.member-text {
+		font-size: 20px;
+	}
+}
+@media all (min-width: 767px) {
+	.member {
+		padding: 10% 30px;
+	}
+	.member-text {
+		font-size: 20px;
+		padding-bottom: 25px;
+	}
+}
+
+/* CUSTOM IMG & COLORS */
+.pasquale-row {
+	background-color: RGBA(236, 129, 85, 1);
+}
+.pasquale-img-container {
+	background-image: url(../..//img_members/pasqualeBM.jpg);
+}
+
+.andrew-row {
+	background-color: RGBA(117, 97, 118, 1);
+}
+.andrew-img-container {
+	background-image: url(../..//img_members/andrewGT.jpg);
+}
+
+.shane-row {
+	background-color: RGBA(242, 236, 164, 1);
+}
+.shane-img-container {
+	background-image: url(../..//img_members/shane.jpg);
+}
+
+.brandon-row {
+	background-color: RGBA(155, 146, 156, 1);
+}
+.brandon-img-container {
+	background-image: url(../..//img_members/brandon.jpg);
+}
+
+
+.info-container {
+    margin-top: 270px;
+    background-color: RGBA(255, 255, 255, .65);
+    padding: 10px 0;
+}
+.info-container h3 {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 5px;
+	font-size: 20px;
+}
+.info-container h4 {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+
+
+/******* WEB *******/
+.web-container {
+
 }
